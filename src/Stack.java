@@ -1,5 +1,3 @@
-import java.lang.Math;
-
 public class Stack{
     public Coordinate[] stack;
     public int index;
@@ -64,31 +62,24 @@ public class Stack{
         this.stack = newStack;
     }
 
-    public boolean contains(Coordinate cord){
-        boolean contains = false;
-        for (int i = 0; i < this.stack.length; i++) {
-            if(this.stack[i] == cord){
-                contains = true;
-            }
-        }
-
-        return contains;
-    }
-
     public void printStack(){
         this.max();
 
         for (int i = this.stack.length -1; i >= 0; i--) {
             if(this.stack[i] != null) {
                 int houses = this.max - this.stack[i].stringCoordinate().length();
+
                 System.out.print("|");
                 for (int j = 0; j < houses/2; j++) {
                     System.out.print(" ");
                 }
+
                 System.out.print(this.stack[i].stringCoordinate());
+
                 for (int j = 0; j < houses/2; j++) {
                     System.out.print(" ");
                 }
+
                 System.out.print("|");
             }else{
                 System.out.print("|");

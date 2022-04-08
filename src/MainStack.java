@@ -17,6 +17,7 @@ public class MainStack {
         System.out.println("isFull? " + stack.isFull());
         System.out.println("isEmpty? " + stack.isEmpty());
         System.out.println("Peek? " + stack.peek().stringCoordinate());
+
         //Stack increase
         stack.push(new Coordinate(55555,55555));
         stack.push(new Coordinate(1,1));
