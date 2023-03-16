@@ -9,7 +9,7 @@
 programa passa o desenho para uma matriz e vai procurar por um "E" e um "S" para definir a entrada e saída do labirinto, respectivamente.</p>
 <br>
 
-<p style="color:green;"> Iniciando a solução...</p>
+<p> Iniciando a solução...</p>
 <img src="https://github.com/LucasYanaga/LabyrinthStack/blob/master/img/img.png">
 <br>
 
